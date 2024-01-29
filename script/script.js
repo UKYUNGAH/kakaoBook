@@ -17,7 +17,7 @@ $(document).ready(function () {
                     $('.info').show();
                     $('.info_top').html(`<img src="${msg.documents[0].thumbnail}"/>`).show();
                     $('.book_name').html(msg.documents[0].title).show();
-                    $('.book_info').html(msg.documents[0].contents).show();
+                    $('.book_info').html(msg.documents[0].contents + "⋯").show();
                 } else {
                     // 검색 결과가 없을 때 각 요소를 숨김
                     $('.info').hide();
