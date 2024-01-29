@@ -9,7 +9,7 @@ $(document).ready(function () {
             method: "GET",
             url: "https://dapi.kakao.com/v3/search/book?target=title",
             data: { query: $("#bookName").val() },
-            headers: { Authorization: bookApi }
+            headers: { Authorization: 'KakaoAK 63e8229c0069dab9ceb172df49a80ec6' }
         })
             .done(function (msg) {
                 if (msg.documents.length > 0) {
